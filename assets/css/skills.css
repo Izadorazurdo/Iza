@@ -6,18 +6,18 @@
     margin-top: -5rem;
 }
 .skills .grid{
-    background-color: var(--foreground);
+    background-color: var(--background);
     margin: 0 2rem;
     border-radius: 1.5rem;
     display: grid;
     grid-template-columns: 1fr;
     box-shadow: 0 3px 5px var(--primary-light);
 }
-.skill .skill{
+.skills .skill{
     text-align: center;
     border-right: 0;
     border-bottom: 1px solid var(--primary-light);
-    color: var(--primary-light);
+    color: var(--primary);
     padding: 5rem 2rem;
 }
 
@@ -26,6 +26,7 @@
     border-bottom: 0;
 }
 
+/* SKILL ITEM */
 .skill-icon{
     width: 7rem;
     height: 7rem;
@@ -39,8 +40,8 @@
 }
 
 .skill-icon img{
-   width: 4rem;
-   height: 4rem;
+    width: 4rem;
+    height: 4rem;
 }
 .skill-title{
     font-weight: bold;
@@ -51,6 +52,7 @@
     font-size: 1.7rem;
     line-height: 2.5rem;
 }
+
 .skill-sub{
     margin-top: 5rem;
     margin-bottom: 1rem;
@@ -64,10 +66,10 @@
 
 @media (width > 600px){
     .skills .grid{
-        grid-template-columns: repeat(3.1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
-    .skills.skill{
+    .skills .skill{
         border-bottom: 0;
         border-right: 1px solid var(--primary-light);
     }
